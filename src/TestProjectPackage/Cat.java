@@ -1,6 +1,6 @@
 package TestProjectPackage;
 
-public class Cat extends Animal {
+public class Cat extends Animal implements Pet {
 
     Cat() {
         super();
@@ -18,6 +18,11 @@ public class Cat extends Animal {
     @Override
     public void say() {
         System.out.println("Мяу-мяу");
+    }
+
+    @Override
+    public void play() {
+        System.out.println("Кошка играет");
     }
 
     public void run() {
