@@ -1,24 +1,19 @@
 package TestProjectPackage;
 
-public class Cat extends Animal implements Pet, Predator {
+public class Tiger extends Animal implements Predator {
 
-    Cat() {
+    Tiger() {
         super();
     }
 
-    Cat(int size, String name) {
+    Tiger(int size, String name) {
         this.setSize(size);
         this.setName(name);
     }
 
     @Override
     public void say() {
-        System.out.println("Мяу-мяу");
-    }
-
-    @Override
-    public void play() {
-        System.out.println(getName() + " играет");
+        System.out.println("Арррр");
     }
 
     @Override

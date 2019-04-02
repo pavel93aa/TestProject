@@ -9,7 +9,8 @@ public class Duck extends Animal {
     }
 
     Duck(int size, String name, boolean canFly) {
-        super(size, name);
+        this.setSize(size);
+        this.setName(name);
         this.canFly = canFly;
     }
 
@@ -33,8 +34,7 @@ public class Duck extends Animal {
 
     public void fly() {
         if (canFly) {
-            System.out.println("Утка летит");
-        } else System.out.println("Утка не летит");
+            System.out.println(getName() + " летит");
+        } else System.out.println(getName() + " не летит");
     }
-
 }

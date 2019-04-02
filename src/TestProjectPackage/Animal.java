@@ -4,14 +4,6 @@ public abstract class Animal {
     private int size;
     private String name;
 
-    Animal() {
-    }
-
-    Animal(int size, String name) {
-        this.size = size;
-        this.name = name;
-    }
-
     public int getSize() {
         return size;
     }
@@ -28,7 +20,13 @@ public abstract class Animal {
         this.name = name;
     }
 
-    abstract public void status();
+    public void status() {
+        System.out.println("Size = " + size + " Name = " + name);
+    }
+
+    public void run() {
+        System.out.println(getName() + " бежит");
+    }
 
     abstract public void say();
 }
