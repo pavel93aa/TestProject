@@ -1,6 +1,6 @@
 package TestProjectPackage;
 
-public class Tiger extends Animal implements Predator {
+public class Tiger extends Feline {
 
     Tiger() {
         super();
@@ -14,10 +14,5 @@ public class Tiger extends Animal implements Predator {
     @Override
     public void say() {
         System.out.println("Арррр");
-    }
-
-    @Override
-    public void hunt() {
-        System.out.println(getName() + " охотится");
     }
 }
