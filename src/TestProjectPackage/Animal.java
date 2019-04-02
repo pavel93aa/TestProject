@@ -25,7 +25,7 @@ public abstract class Animal {
     }
 
     public void run() {
-        System.out.println(getName() + " бежит");
+        System.out.println(name + " бежит");
     }
 
     abstract public void say();
