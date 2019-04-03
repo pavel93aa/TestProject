@@ -7,7 +7,6 @@ public class MyClass {
         Cat cat = new Cat(10, "Мурка");
         Duck duck = new Duck(5, "Дональд", true);
         Tiger tiger = new Tiger(100, "Тигр");
-        RobotCat robotCat = new RobotCat(228, true);
 
         cat.status();
         cat.run();
@@ -24,9 +23,6 @@ public class MyClass {
         tiger.run();
         tiger.hunt();
         tiger.say();
-
-        robotCat.play();
-        robotCat.charge();
     }
 }
 
