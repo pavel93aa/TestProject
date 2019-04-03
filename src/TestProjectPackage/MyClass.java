@@ -4,8 +4,8 @@ public class MyClass {
 
     public static void main(String[] args) {
 
-        Cat cat = new Cat(10, "Мурка");
-        Duck duck = new Duck(5, "Дональд", true);
+        Cat cat = new Cat(15, "Мурка");
+        Duck duck = new Duck(10, "Дональд", true);
         Tiger tiger = new Tiger(100, "Тигр");
 
         cat.status();
