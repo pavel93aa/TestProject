@@ -20,4 +20,5 @@ public class Cat extends Feline implements Pet {
     public void play() {
         System.out.println(getName() + " играет");
     }
+
 }

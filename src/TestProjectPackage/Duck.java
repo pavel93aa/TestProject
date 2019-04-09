@@ -1,5 +1,7 @@
 package TestProjectPackage;
 
+import java.util.Objects;
+
 public class Duck extends Animal {
 
     private boolean canFly;
@@ -36,5 +38,19 @@ public class Duck extends Animal {
         if (canFly) {
             System.out.println(getName() + " летит");
         } else System.out.println(getName() + " не летит");
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+        Duck duck = (Duck) o;
+        return canFly == duck.canFly;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), canFly);
     }
 }

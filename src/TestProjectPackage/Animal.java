@@ -1,5 +1,7 @@
 package TestProjectPackage;
 
+import java.util.Objects;
+
 public abstract class Animal {
     private int size;
     private String name;
@@ -29,4 +31,19 @@ public abstract class Animal {
     }
 
     abstract public void say();
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Animal animal = (Animal) o;
+        return size == animal.size &&
+                Objects.equals(name, animal.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(size, name);
+    }
+
 }
